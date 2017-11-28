@@ -6,7 +6,7 @@ class TestPerson < MiniTest::Test
 
   def setup
     @person = Person.new("Bob", 32)
-    
+
   end
 
 end

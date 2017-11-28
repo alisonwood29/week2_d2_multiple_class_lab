@@ -2,17 +2,17 @@ class Bus
 
 attr_reader :bus_number, :destination, :passengers
 
-  def initialize(bus_number, destination, passengers)
+  def initialize(bus_number, destination)
     @bus_number = bus_number
     @destination = destination
-    @passengers = passengers
+    @passengers = []
   end
 
-  def engine
+  def engine()
     return "Brum Brum"
   end
 
-  def passenger_number
+  def number_of_passengers()
     return @passengers.count()
   end
 
@@ -24,7 +24,7 @@ attr_reader :bus_number, :destination, :passengers
     @passengers.delete(passenger)
   end
 
-  def empty
+  def empty()
     @passengers.clear
   end
 
